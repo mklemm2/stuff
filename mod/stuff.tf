@@ -11,6 +11,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "eu-central-1"
+}
+
 variable "bucket_name" {
   description = "Der global eindeutige Name des S3-Buckets."
   type        = string
